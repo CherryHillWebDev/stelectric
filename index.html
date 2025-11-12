@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <title>S.T. Electric Inc. | South Jersey's No. 1 Electric Company</title>
+    <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
 </head>
 <body>
     <header>
@@ -142,7 +143,7 @@
                         </div>
                         <div class="index-service-card-text">
                             <h3>Electrical Services</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, impedit velit. Consequatur ratione saepe cumque magni consectetur sint. Corporis et dolorum voluptatum eveniet. Maiores sed, dolorem perferendis molestias tenetur voluptatem.</p>
+                            <p>S.T. Electric delivers reliable commercial and industrial electrical services, including wiring, power distribution, and system upgrades. With over 20 years of experience, our licensed team ensures every installation meets code and operates efficiently for long-term performance.</p>
                         </div>
                     </div>
                     <div class="index-service-card">
@@ -151,7 +152,7 @@
                         </div>
                         <div class="index-service-card-text">
                             <h3>Lighting</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, impedit velit. Consequatur ratione saepe cumque magni consectetur sint. Corporis et dolorum voluptatum eveniet. Maiores sed, dolorem perferendis molestias tenetur voluptatem.</p>
+                            <p>From energy-efficient LED retrofits to custom lighting designs, S.T. Electric enhances visibility, safety, and aesthetics for businesses of all sizes. We handle both indoor and outdoor lighting systems, offering expert maintenance and tailored solutions.</p>
                         </div>
                     </div>
 
@@ -161,7 +162,7 @@
                         </div>
                         <div class="index-service-card-text">
                             <h3>Signs</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, impedit velit. Consequatur ratione saepe cumque magni consectetur sint. Corporis et dolorum voluptatum eveniet. Maiores sed, dolorem perferendis molestias tenetur voluptatem.</p>
+                            <p>S.T. Electric designs, installs, and services a wide range of illuminated and non-illuminated signs. Our team ensures every sign is properly wired, visually striking, and built to comply with local regulations and brand standards.</p>
                         </div>
                     </div>
 
@@ -171,7 +172,7 @@
                         </div>
                         <div class="index-service-card-text">
                             <h3>Video Board</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, impedit velit. Consequatur ratione saepe cumque magni consectetur sint. Corporis et dolorum voluptatum eveniet. Maiores sed, dolorem perferendis molestias tenetur voluptatem.</p>
+                            <p>Their video board services bring cutting-edge digital displays to commercial and retail spaces. S.T. Electric manages everything from installation and programming to maintenance, ensuring your message stands out day or night.</p>
                         </div>
                     </div>
 
@@ -181,7 +182,7 @@
                         </div>
                         <div class="index-service-card-text">
                             <h3>Surveys & Permits</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, impedit velit. Consequatur ratione saepe cumque magni consectetur sint. Corporis et dolorum voluptatum eveniet. Maiores sed, dolorem perferendis molestias tenetur voluptatem.</p>
+                            <p>S.T. Electric simplifies the complex process of site surveys and permit acquisition. Their experienced staff ensures each project meets local codes and safety standards, helping clients avoid delays and stay fully compliant.</p>
                         </div>
                     </div>
 
@@ -191,7 +192,7 @@
                         </div>
                         <div class="index-service-card-text">
                             <h3>Other Specialty Services</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, impedit velit. Consequatur ratione saepe cumque magni consectetur sint. Corporis et dolorum voluptatum eveniet. Maiores sed, dolorem perferendis molestias tenetur voluptatem.</p>
+                            <p>Beyond electrical and lighting, S.T. Electric offers a variety of specialty services, including flagpole installations, custom color lighting lenses, and specialty welding. They also improve and maintain appearances through sign restoration, pressure washing, cleaning, painting, and polishing.</p>
                         </div>
                     </div>
                 </div>
@@ -273,22 +274,28 @@
                         <div class="contact-container">
                             <div class="email-form" id="email-form">
                                 <h2>REQUEST A SERVICE</h2>
-                                <form action="https://submit-form.com/TUz36vnal" method="POST" enctype= "multipart/form-data">
+                                <form action="https://submit-form.com/TUz36vnal" method="POST">
                                     <div class="form-group">
                                         <div class="form-row">
-                                            <input type="hidden" name="_subject" id="_subject" value="New Form Submission" />
+                                            <input type="hidden" name="_subject" id="_email.subject" value="New Form Submission" />
                                             <input type="text" name="name" id="name" placeholder="Full Name*" required>
                                             <input type="email" name="email" id="email" placeholder="Email Address*" required>
                                             <input type="text" name="phone-number" id="phone-number" placeholder="What's your phone number?">
                                             <input type="text" name="location" id="location" placeholder="Where are you located?">  
+                                            
                                         </div>
-                                        
                                         <div class="email-body">
                                             <textarea placeholder="Your Message*" name="message" rows="10" required></textarea>
-                                            <span class='file-row'><input class="file-upload" type="file" name="attachment" accept="image/png, image/jpeg, application/pdf"><p>Max. file size: 5MB</p></span>
+                                            <input
+                                                type="hidden"
+                                                id="photo"
+                                                name="photo"
+                                                role="uploadcare-uploader"
+                                                data-public-key="a52d445774a24543a727"
+                                            />
                                         </div>
                                     </div>
-                                    <button class="submit-btn cta" type="submit" onclick="submitEmail()"><span>Send Email!</span></button>
+                                    <button class="submit-btn cta" type="submit"><span>Send Email!</span></button>
                                 </form>
                             </div>
                         </div>
