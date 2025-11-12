@@ -665,7 +665,7 @@ body.no-scroll {
     padding-top: 3rem;
     justify-content: center;
     gap: 3rem;
-    background-image: url('../img/electric-bg1.png');
+    background-image: url('../img/electric-bg1.webp');
     background-color: rgba(255, 255, 255, 0.85);
     background-blend-mode: overlay;
 }
@@ -1337,6 +1337,7 @@ body.no-scroll {
 
 .collage {
     display: grid;
+    display: none; /*REMOVE WHEN THEY GIVE YOU PICTURES*/
     grid-template-columns: 1fr 1fr 1fr;
     gap:10px;
     width: 70%;
